@@ -1,0 +1,33 @@
+PODS:
+  - Nimble (7.3.1)
+  - Quick (1.3.2)
+  - Result (4.1.0)
+  - Swinject (2.5.0)
+  - SwinjectStoryboard (2.1.0):
+    - Swinject (~> 2.5)
+
+DEPENDENCIES:
+  - Nimble (= 7.3.1)
+  - Quick (= 1.3.2)
+  - Result (= 4.1.0)
+  - Swinject (= 2.5.0)
+  - SwinjectStoryboard (= 2.1.0)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Nimble
+    - Quick
+    - Result
+    - Swinject
+    - SwinjectStoryboard
+
+SPEC CHECKSUMS:
+  Nimble: 04f732da099ea4d153122aec8c2a88fd0c7219ae
+  Quick: 2623cb30d7a7f41ca62f684f679586558f483d46
+  Result: bd966fac789cc6c1563440b348ab2598cc24d5c7
+  Swinject: 82cdb851f63f91bba974e3eca1d69780f2f7677e
+  SwinjectStoryboard: 688f096033103e66ffcf6ca678211acd7d7be505
+
+PODFILE CHECKSUM: d92506e0c31995d831eebe51ad477d1512e6fa11
+
+COCOAPODS: 1.5.3

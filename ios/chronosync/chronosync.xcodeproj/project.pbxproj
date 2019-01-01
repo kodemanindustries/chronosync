@@ -1,0 +1,673 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		79D227E16FE31D226AF84421 /* Pods_ChronoSyncTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7ADCF24581CBB9E78B25ED0 /* Pods_ChronoSyncTests.framework */; };
+		9C53ACF8C04F26087C4A8005 /* Pods_ChronoSync.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D960AD8343597AB10BC8AD83 /* Pods_ChronoSync.framework */; };
+		C321E82C21DBF39000C7CDA4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C321E82B21DBF39000C7CDA4 /* AppDelegate.swift */; };
+		C321E82E21DBF39000C7CDA4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C321E82D21DBF39000C7CDA4 /* ViewController.swift */; };
+		C321E83121DBF39000C7CDA4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C321E82F21DBF39000C7CDA4 /* Main.storyboard */; };
+		C321E83321DBF39100C7CDA4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C321E83221DBF39100C7CDA4 /* Assets.xcassets */; };
+		C321E83621DBF39100C7CDA4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C321E83421DBF39100C7CDA4 /* LaunchScreen.storyboard */; };
+		C321E85821DBF79500C7CDA4 /* ViewControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = C321E84B21DBF79500C7CDA4 /* ViewControllerFactory.swift */; };
+		C321E85921DBF79500C7CDA4 /* KitchenDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C321E84C21DBF79500C7CDA4 /* KitchenDelegate.swift */; };
+		C321E85A21DBF79500C7CDA4 /* Kitchen.swift in Sources */ = {isa = PBXBuildFile; fileRef = C321E84D21DBF79500C7CDA4 /* Kitchen.swift */; };
+		C321E85B21DBF79500C7CDA4 /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C321E84E21DBF79500C7CDA4 /* BaseView.swift */; };
+		C321E85C21DBF79500C7CDA4 /* TestAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C321E84F21DBF79500C7CDA4 /* TestAppDelegate.swift */; };
+		C321E85D21DBF79500C7CDA4 /* ForceCast.swift in Sources */ = {isa = PBXBuildFile; fileRef = C321E85021DBF79500C7CDA4 /* ForceCast.swift */; };
+		C321E85E21DBF79500C7CDA4 /* Application.swift in Sources */ = {isa = PBXBuildFile; fileRef = C321E85121DBF79500C7CDA4 /* Application.swift */; };
+		C321E85F21DBF79500C7CDA4 /* ViewIdentifiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C321E85221DBF79500C7CDA4 /* ViewIdentifiable.swift */; };
+		C321E86021DBF79500C7CDA4 /* UIImage+TeamBoss.swift in Sources */ = {isa = PBXBuildFile; fileRef = C321E85321DBF79500C7CDA4 /* UIImage+TeamBoss.swift */; };
+		C321E86121DBF79500C7CDA4 /* MainAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = C321E85421DBF79500C7CDA4 /* MainAssembly.swift */; };
+		C321E86221DBF79500C7CDA4 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = C321E85521DBF79500C7CDA4 /* main.swift */; };
+		C321E86321DBF79500C7CDA4 /* ForceResolve.swift in Sources */ = {isa = PBXBuildFile; fileRef = C321E85621DBF79500C7CDA4 /* ForceResolve.swift */; };
+		C321E86421DBF79500C7CDA4 /* ViewFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = C321E85721DBF79500C7CDA4 /* ViewFactory.swift */; };
+		C321E86921DBF9FD00C7CDA4 /* TestHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = C321E86621DBF9FC00C7CDA4 /* TestHelpers.swift */; };
+		C321E86B21DBF9FD00C7CDA4 /* ViewControllerFactory+TestHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C321E86821DBF9FC00C7CDA4 /* ViewControllerFactory+TestHelper.swift */; };
+		C321E86C21DBFA0600C7CDA4 /* TestMainAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = C321E86721DBF9FC00C7CDA4 /* TestMainAssembly.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C321E83D21DBF39100C7CDA4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C321E82021DBF39000C7CDA4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C321E82721DBF39000C7CDA4;
+			remoteInfo = chronosync;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		034D0A619E3A894AFFA652DA /* Pods-ChronoSync.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChronoSync.release.xcconfig"; path = "Pods/Target Support Files/Pods-ChronoSync/Pods-ChronoSync.release.xcconfig"; sourceTree = "<group>"; };
+		39C78B59BC37D3E12C0B42DB /* Pods-ChronoSync.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChronoSync.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ChronoSync/Pods-ChronoSync.debug.xcconfig"; sourceTree = "<group>"; };
+		4237D176789AF6F9B285EB38 /* Pods-ChronoSyncTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChronoSyncTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ChronoSyncTests/Pods-ChronoSyncTests.release.xcconfig"; sourceTree = "<group>"; };
+		C321E82821DBF39000C7CDA4 /* ChronoSync.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChronoSync.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C321E82B21DBF39000C7CDA4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C321E82D21DBF39000C7CDA4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C321E83021DBF39000C7CDA4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C321E83221DBF39100C7CDA4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C321E83521DBF39100C7CDA4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C321E83721DBF39100C7CDA4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C321E83C21DBF39100C7CDA4 /* ChronoSyncTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChronoSyncTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C321E84221DBF39100C7CDA4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C321E84B21DBF79500C7CDA4 /* ViewControllerFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerFactory.swift; sourceTree = "<group>"; };
+		C321E84C21DBF79500C7CDA4 /* KitchenDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KitchenDelegate.swift; sourceTree = "<group>"; };
+		C321E84D21DBF79500C7CDA4 /* Kitchen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Kitchen.swift; sourceTree = "<group>"; };
+		C321E84E21DBF79500C7CDA4 /* BaseView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
+		C321E84F21DBF79500C7CDA4 /* TestAppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestAppDelegate.swift; sourceTree = "<group>"; };
+		C321E85021DBF79500C7CDA4 /* ForceCast.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForceCast.swift; sourceTree = "<group>"; };
+		C321E85121DBF79500C7CDA4 /* Application.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Application.swift; sourceTree = "<group>"; };
+		C321E85221DBF79500C7CDA4 /* ViewIdentifiable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewIdentifiable.swift; sourceTree = "<group>"; };
+		C321E85321DBF79500C7CDA4 /* UIImage+TeamBoss.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+TeamBoss.swift"; sourceTree = "<group>"; };
+		C321E85421DBF79500C7CDA4 /* MainAssembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainAssembly.swift; sourceTree = "<group>"; };
+		C321E85521DBF79500C7CDA4 /* main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		C321E85621DBF79500C7CDA4 /* ForceResolve.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForceResolve.swift; sourceTree = "<group>"; };
+		C321E85721DBF79500C7CDA4 /* ViewFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewFactory.swift; sourceTree = "<group>"; };
+		C321E86521DBF9FC00C7CDA4 /* ChronoSyncTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ChronoSyncTests-Bridging-Header.h"; sourceTree = "<group>"; };
+		C321E86621DBF9FC00C7CDA4 /* TestHelpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestHelpers.swift; sourceTree = "<group>"; };
+		C321E86721DBF9FC00C7CDA4 /* TestMainAssembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestMainAssembly.swift; sourceTree = "<group>"; };
+		C321E86821DBF9FC00C7CDA4 /* ViewControllerFactory+TestHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ViewControllerFactory+TestHelper.swift"; sourceTree = "<group>"; };
+		D688F2B5EB68E90ACC571CAE /* Pods-ChronoSyncTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChronoSyncTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ChronoSyncTests/Pods-ChronoSyncTests.debug.xcconfig"; sourceTree = "<group>"; };
+		D960AD8343597AB10BC8AD83 /* Pods_ChronoSync.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ChronoSync.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F7ADCF24581CBB9E78B25ED0 /* Pods_ChronoSyncTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ChronoSyncTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C321E82521DBF39000C7CDA4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9C53ACF8C04F26087C4A8005 /* Pods_ChronoSync.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C321E83921DBF39100C7CDA4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				79D227E16FE31D226AF84421 /* Pods_ChronoSyncTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6BAAF2AD6584ED1CB55F6718 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D960AD8343597AB10BC8AD83 /* Pods_ChronoSync.framework */,
+				F7ADCF24581CBB9E78B25ED0 /* Pods_ChronoSyncTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		74C57CFDB807880FC5BA04B7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				39C78B59BC37D3E12C0B42DB /* Pods-ChronoSync.debug.xcconfig */,
+				034D0A619E3A894AFFA652DA /* Pods-ChronoSync.release.xcconfig */,
+				D688F2B5EB68E90ACC571CAE /* Pods-ChronoSyncTests.debug.xcconfig */,
+				4237D176789AF6F9B285EB38 /* Pods-ChronoSyncTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		C321E81F21DBF39000C7CDA4 = {
+			isa = PBXGroup;
+			children = (
+				C321E82A21DBF39000C7CDA4 /* chronosync */,
+				C321E83F21DBF39100C7CDA4 /* chronosyncTests */,
+				C321E82921DBF39000C7CDA4 /* Products */,
+				74C57CFDB807880FC5BA04B7 /* Pods */,
+				6BAAF2AD6584ED1CB55F6718 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		C321E82921DBF39000C7CDA4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C321E82821DBF39000C7CDA4 /* ChronoSync.app */,
+				C321E83C21DBF39100C7CDA4 /* ChronoSyncTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C321E82A21DBF39000C7CDA4 /* chronosync */ = {
+			isa = PBXGroup;
+			children = (
+				C321E82B21DBF39000C7CDA4 /* AppDelegate.swift */,
+				C321E85121DBF79500C7CDA4 /* Application.swift */,
+				C321E83221DBF39100C7CDA4 /* Assets.xcassets */,
+				C321E84E21DBF79500C7CDA4 /* BaseView.swift */,
+				C321E85021DBF79500C7CDA4 /* ForceCast.swift */,
+				C321E85621DBF79500C7CDA4 /* ForceResolve.swift */,
+				C321E83721DBF39100C7CDA4 /* Info.plist */,
+				C321E84D21DBF79500C7CDA4 /* Kitchen.swift */,
+				C321E84C21DBF79500C7CDA4 /* KitchenDelegate.swift */,
+				C321E83421DBF39100C7CDA4 /* LaunchScreen.storyboard */,
+				C321E82F21DBF39000C7CDA4 /* Main.storyboard */,
+				C321E85521DBF79500C7CDA4 /* main.swift */,
+				C321E85421DBF79500C7CDA4 /* MainAssembly.swift */,
+				C321E84F21DBF79500C7CDA4 /* TestAppDelegate.swift */,
+				C321E85321DBF79500C7CDA4 /* UIImage+TeamBoss.swift */,
+				C321E82D21DBF39000C7CDA4 /* ViewController.swift */,
+				C321E84B21DBF79500C7CDA4 /* ViewControllerFactory.swift */,
+				C321E85721DBF79500C7CDA4 /* ViewFactory.swift */,
+				C321E85221DBF79500C7CDA4 /* ViewIdentifiable.swift */,
+			);
+			path = chronosync;
+			sourceTree = "<group>";
+		};
+		C321E83F21DBF39100C7CDA4 /* chronosyncTests */ = {
+			isa = PBXGroup;
+			children = (
+				C321E86621DBF9FC00C7CDA4 /* TestHelpers.swift */,
+				C321E86721DBF9FC00C7CDA4 /* TestMainAssembly.swift */,
+				C321E86821DBF9FC00C7CDA4 /* ViewControllerFactory+TestHelper.swift */,
+				C321E84221DBF39100C7CDA4 /* Info.plist */,
+				C321E86521DBF9FC00C7CDA4 /* ChronoSyncTests-Bridging-Header.h */,
+			);
+			path = chronosyncTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C321E82721DBF39000C7CDA4 /* ChronoSync */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C321E84521DBF39100C7CDA4 /* Build configuration list for PBXNativeTarget "ChronoSync" */;
+			buildPhases = (
+				B01A73EFFD4225886D4532CF /* [CP] Check Pods Manifest.lock */,
+				C321E82421DBF39000C7CDA4 /* Sources */,
+				C321E82521DBF39000C7CDA4 /* Frameworks */,
+				C321E82621DBF39000C7CDA4 /* Resources */,
+				D63412E0F190B01B6B42917C /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ChronoSync;
+			productName = chronosync;
+			productReference = C321E82821DBF39000C7CDA4 /* ChronoSync.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C321E83B21DBF39100C7CDA4 /* ChronoSyncTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C321E84821DBF39100C7CDA4 /* Build configuration list for PBXNativeTarget "ChronoSyncTests" */;
+			buildPhases = (
+				B86DB2181B7F85C380F995F8 /* [CP] Check Pods Manifest.lock */,
+				C321E83821DBF39100C7CDA4 /* Sources */,
+				C321E83921DBF39100C7CDA4 /* Frameworks */,
+				C321E83A21DBF39100C7CDA4 /* Resources */,
+				6B5580304674B8F41CDFB51C /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C321E83E21DBF39100C7CDA4 /* PBXTargetDependency */,
+			);
+			name = ChronoSyncTests;
+			productName = chronosyncTests;
+			productReference = C321E83C21DBF39100C7CDA4 /* ChronoSyncTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C321E82021DBF39000C7CDA4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Kodeman Industries";
+				TargetAttributes = {
+					C321E82721DBF39000C7CDA4 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					C321E83B21DBF39100C7CDA4 = {
+						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
+						TestTargetID = C321E82721DBF39000C7CDA4;
+					};
+				};
+			};
+			buildConfigurationList = C321E82321DBF39000C7CDA4 /* Build configuration list for PBXProject "chronosync" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C321E81F21DBF39000C7CDA4;
+			productRefGroup = C321E82921DBF39000C7CDA4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C321E82721DBF39000C7CDA4 /* ChronoSync */,
+				C321E83B21DBF39100C7CDA4 /* ChronoSyncTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C321E82621DBF39000C7CDA4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C321E83621DBF39100C7CDA4 /* LaunchScreen.storyboard in Resources */,
+				C321E83321DBF39100C7CDA4 /* Assets.xcassets in Resources */,
+				C321E83121DBF39000C7CDA4 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C321E83A21DBF39100C7CDA4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6B5580304674B8F41CDFB51C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-ChronoSyncTests/Pods-ChronoSyncTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Nimble/Nimble.framework",
+				"${BUILT_PRODUCTS_DIR}/Quick/Quick.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nimble.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Quick.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ChronoSyncTests/Pods-ChronoSyncTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B01A73EFFD4225886D4532CF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ChronoSync-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B86DB2181B7F85C380F995F8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ChronoSyncTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D63412E0F190B01B6B42917C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-ChronoSync/Pods-ChronoSync-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
+				"${BUILT_PRODUCTS_DIR}/Swinject/Swinject.framework",
+				"${BUILT_PRODUCTS_DIR}/SwinjectStoryboard/SwinjectStoryboard.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Swinject.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwinjectStoryboard.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ChronoSync/Pods-ChronoSync-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C321E82421DBF39000C7CDA4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C321E85E21DBF79500C7CDA4 /* Application.swift in Sources */,
+				C321E86221DBF79500C7CDA4 /* main.swift in Sources */,
+				C321E85C21DBF79500C7CDA4 /* TestAppDelegate.swift in Sources */,
+				C321E85821DBF79500C7CDA4 /* ViewControllerFactory.swift in Sources */,
+				C321E85921DBF79500C7CDA4 /* KitchenDelegate.swift in Sources */,
+				C321E85A21DBF79500C7CDA4 /* Kitchen.swift in Sources */,
+				C321E86C21DBFA0600C7CDA4 /* TestMainAssembly.swift in Sources */,
+				C321E86321DBF79500C7CDA4 /* ForceResolve.swift in Sources */,
+				C321E86421DBF79500C7CDA4 /* ViewFactory.swift in Sources */,
+				C321E85D21DBF79500C7CDA4 /* ForceCast.swift in Sources */,
+				C321E85B21DBF79500C7CDA4 /* BaseView.swift in Sources */,
+				C321E82E21DBF39000C7CDA4 /* ViewController.swift in Sources */,
+				C321E86021DBF79500C7CDA4 /* UIImage+TeamBoss.swift in Sources */,
+				C321E85F21DBF79500C7CDA4 /* ViewIdentifiable.swift in Sources */,
+				C321E86121DBF79500C7CDA4 /* MainAssembly.swift in Sources */,
+				C321E82C21DBF39000C7CDA4 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C321E83821DBF39100C7CDA4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C321E86921DBF9FD00C7CDA4 /* TestHelpers.swift in Sources */,
+				C321E86B21DBF9FD00C7CDA4 /* ViewControllerFactory+TestHelper.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C321E83E21DBF39100C7CDA4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C321E82721DBF39000C7CDA4 /* ChronoSync */;
+			targetProxy = C321E83D21DBF39100C7CDA4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C321E82F21DBF39000C7CDA4 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C321E83021DBF39000C7CDA4 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C321E83421DBF39100C7CDA4 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C321E83521DBF39100C7CDA4 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C321E84321DBF39100C7CDA4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C321E84421DBF39100C7CDA4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C321E84621DBF39100C7CDA4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 39C78B59BC37D3E12C0B42DB /* Pods-ChronoSync.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RRZQ277C77;
+				INFOPLIST_FILE = chronosync/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.kodemanindustries.chronosync;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		C321E84721DBF39100C7CDA4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 034D0A619E3A894AFFA652DA /* Pods-ChronoSync.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RRZQ277C77;
+				INFOPLIST_FILE = chronosync/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.kodemanindustries.chronosync;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		C321E84921DBF39100C7CDA4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D688F2B5EB68E90ACC571CAE /* Pods-ChronoSyncTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RRZQ277C77;
+				INFOPLIST_FILE = chronosyncTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.kodemanindustries.chronosyncTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "chronosyncTests/ChronoSyncTests-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ChronoSync.app/ChronoSync";
+			};
+			name = Debug;
+		};
+		C321E84A21DBF39100C7CDA4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4237D176789AF6F9B285EB38 /* Pods-ChronoSyncTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RRZQ277C77;
+				INFOPLIST_FILE = chronosyncTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.kodemanindustries.chronosyncTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "chronosyncTests/ChronoSyncTests-Bridging-Header.h";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ChronoSync.app/ChronoSync";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C321E82321DBF39000C7CDA4 /* Build configuration list for PBXProject "chronosync" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C321E84321DBF39100C7CDA4 /* Debug */,
+				C321E84421DBF39100C7CDA4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C321E84521DBF39100C7CDA4 /* Build configuration list for PBXNativeTarget "ChronoSync" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C321E84621DBF39100C7CDA4 /* Debug */,
+				C321E84721DBF39100C7CDA4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C321E84821DBF39100C7CDA4 /* Build configuration list for PBXNativeTarget "ChronoSyncTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C321E84921DBF39100C7CDA4 /* Debug */,
+				C321E84A21DBF39100C7CDA4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C321E82021DBF39000C7CDA4 /* Project object */;
+}
