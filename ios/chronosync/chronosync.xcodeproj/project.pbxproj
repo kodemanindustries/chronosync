@@ -30,6 +30,8 @@
 		C321E86921DBF9FD00C7CDA4 /* TestHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = C321E86621DBF9FC00C7CDA4 /* TestHelpers.swift */; };
 		C321E86B21DBF9FD00C7CDA4 /* ViewControllerFactory+TestHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C321E86821DBF9FC00C7CDA4 /* ViewControllerFactory+TestHelper.swift */; };
 		C321E86C21DBFA0600C7CDA4 /* TestMainAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = C321E86721DBF9FC00C7CDA4 /* TestMainAssembly.swift */; };
+		C321E86E21DBFC2600C7CDA4 /* TimerType.swift in Sources */ = {isa = PBXBuildFile; fileRef = C321E86D21DBFC2600C7CDA4 /* TimerType.swift */; };
+		C321E87021DBFC5200C7CDA4 /* Time.swift in Sources */ = {isa = PBXBuildFile; fileRef = C321E86F21DBFC5200C7CDA4 /* Time.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,6 +74,8 @@
 		C321E86621DBF9FC00C7CDA4 /* TestHelpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestHelpers.swift; sourceTree = "<group>"; };
 		C321E86721DBF9FC00C7CDA4 /* TestMainAssembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestMainAssembly.swift; sourceTree = "<group>"; };
 		C321E86821DBF9FC00C7CDA4 /* ViewControllerFactory+TestHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ViewControllerFactory+TestHelper.swift"; sourceTree = "<group>"; };
+		C321E86D21DBFC2600C7CDA4 /* TimerType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimerType.swift; sourceTree = "<group>"; };
+		C321E86F21DBFC5200C7CDA4 /* Time.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Time.swift; sourceTree = "<group>"; };
 		D688F2B5EB68E90ACC571CAE /* Pods-ChronoSyncTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChronoSyncTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ChronoSyncTests/Pods-ChronoSyncTests.debug.xcconfig"; sourceTree = "<group>"; };
 		D960AD8343597AB10BC8AD83 /* Pods_ChronoSync.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ChronoSync.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7ADCF24581CBB9E78B25ED0 /* Pods_ChronoSyncTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ChronoSyncTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -140,6 +144,8 @@
 		C321E82A21DBF39000C7CDA4 /* chronosync */ = {
 			isa = PBXGroup;
 			children = (
+				C321E86F21DBFC5200C7CDA4 /* Time.swift */,
+				C321E86D21DBFC2600C7CDA4 /* TimerType.swift */,
 				C321E82B21DBF39000C7CDA4 /* AppDelegate.swift */,
 				C321E85121DBF79500C7CDA4 /* Application.swift */,
 				C321E83221DBF39100C7CDA4 /* Assets.xcassets */,
@@ -384,6 +390,7 @@
 				C321E85821DBF79500C7CDA4 /* ViewControllerFactory.swift in Sources */,
 				C321E85921DBF79500C7CDA4 /* KitchenDelegate.swift in Sources */,
 				C321E85A21DBF79500C7CDA4 /* Kitchen.swift in Sources */,
+				C321E87021DBFC5200C7CDA4 /* Time.swift in Sources */,
 				C321E86C21DBFA0600C7CDA4 /* TestMainAssembly.swift in Sources */,
 				C321E86321DBF79500C7CDA4 /* ForceResolve.swift in Sources */,
 				C321E86421DBF79500C7CDA4 /* ViewFactory.swift in Sources */,
@@ -393,6 +400,7 @@
 				C321E86021DBF79500C7CDA4 /* UIImage+TeamBoss.swift in Sources */,
 				C321E85F21DBF79500C7CDA4 /* ViewIdentifiable.swift in Sources */,
 				C321E86121DBF79500C7CDA4 /* MainAssembly.swift in Sources */,
+				C321E86E21DBFC2600C7CDA4 /* TimerType.swift in Sources */,
 				C321E82C21DBF39000C7CDA4 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
