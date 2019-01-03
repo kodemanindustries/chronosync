@@ -50,6 +50,7 @@ extension Time: Comparable {
 
 extension Time {
     public static func + (left: Time, right: Time) -> Time {
+        precondition(left.milliseconds + right.milliseconds < UINTMAX_MAX, "Time Overflow!")
         return Time(milliseconds: left.milliseconds + right.milliseconds)
     }
 

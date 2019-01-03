@@ -22,7 +22,7 @@
 		C321E85D21DBF79500C7CDA4 /* ForceCast.swift in Sources */ = {isa = PBXBuildFile; fileRef = C321E85021DBF79500C7CDA4 /* ForceCast.swift */; };
 		C321E85E21DBF79500C7CDA4 /* Application.swift in Sources */ = {isa = PBXBuildFile; fileRef = C321E85121DBF79500C7CDA4 /* Application.swift */; };
 		C321E85F21DBF79500C7CDA4 /* ViewIdentifiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C321E85221DBF79500C7CDA4 /* ViewIdentifiable.swift */; };
-		C321E86021DBF79500C7CDA4 /* UIImage+TeamBoss.swift in Sources */ = {isa = PBXBuildFile; fileRef = C321E85321DBF79500C7CDA4 /* UIImage+TeamBoss.swift */; };
+		C321E86021DBF79500C7CDA4 /* UIImage+ChronoSync.swift in Sources */ = {isa = PBXBuildFile; fileRef = C321E85321DBF79500C7CDA4 /* UIImage+ChronoSync.swift */; };
 		C321E86121DBF79500C7CDA4 /* MainAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = C321E85421DBF79500C7CDA4 /* MainAssembly.swift */; };
 		C321E86221DBF79500C7CDA4 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = C321E85521DBF79500C7CDA4 /* main.swift */; };
 		C321E86321DBF79500C7CDA4 /* ForceResolve.swift in Sources */ = {isa = PBXBuildFile; fileRef = C321E85621DBF79500C7CDA4 /* ForceResolve.swift */; };
@@ -32,6 +32,9 @@
 		C321E86C21DBFA0600C7CDA4 /* TestMainAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = C321E86721DBF9FC00C7CDA4 /* TestMainAssembly.swift */; };
 		C321E86E21DBFC2600C7CDA4 /* TimerType.swift in Sources */ = {isa = PBXBuildFile; fileRef = C321E86D21DBFC2600C7CDA4 /* TimerType.swift */; };
 		C321E87021DBFC5200C7CDA4 /* Time.swift in Sources */ = {isa = PBXBuildFile; fileRef = C321E86F21DBFC5200C7CDA4 /* Time.swift */; };
+		ED9F49CB21DDC76300A83149 /* TimeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED9F49CA21DDC76300A83149 /* TimeService.swift */; };
+		ED9F49CD21DDC78600A83149 /* FakeTimeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED9F49CC21DDC78600A83149 /* FakeTimeService.swift */; };
+		ED9F49CF21DDC7B600A83149 /* TimeServiceSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED9F49CE21DDC7B600A83149 /* TimeServiceSpec.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,7 +68,7 @@
 		C321E85021DBF79500C7CDA4 /* ForceCast.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForceCast.swift; sourceTree = "<group>"; };
 		C321E85121DBF79500C7CDA4 /* Application.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Application.swift; sourceTree = "<group>"; };
 		C321E85221DBF79500C7CDA4 /* ViewIdentifiable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewIdentifiable.swift; sourceTree = "<group>"; };
-		C321E85321DBF79500C7CDA4 /* UIImage+TeamBoss.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+TeamBoss.swift"; sourceTree = "<group>"; };
+		C321E85321DBF79500C7CDA4 /* UIImage+ChronoSync.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+ChronoSync.swift"; sourceTree = "<group>"; };
 		C321E85421DBF79500C7CDA4 /* MainAssembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainAssembly.swift; sourceTree = "<group>"; };
 		C321E85521DBF79500C7CDA4 /* main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		C321E85621DBF79500C7CDA4 /* ForceResolve.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForceResolve.swift; sourceTree = "<group>"; };
@@ -78,6 +81,9 @@
 		C321E86F21DBFC5200C7CDA4 /* Time.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Time.swift; sourceTree = "<group>"; };
 		D688F2B5EB68E90ACC571CAE /* Pods-ChronoSyncTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChronoSyncTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ChronoSyncTests/Pods-ChronoSyncTests.debug.xcconfig"; sourceTree = "<group>"; };
 		D960AD8343597AB10BC8AD83 /* Pods_ChronoSync.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ChronoSync.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		ED9F49CA21DDC76300A83149 /* TimeService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeService.swift; sourceTree = "<group>"; };
+		ED9F49CC21DDC78600A83149 /* FakeTimeService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeTimeService.swift; sourceTree = "<group>"; };
+		ED9F49CE21DDC7B600A83149 /* TimeServiceSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeServiceSpec.swift; sourceTree = "<group>"; };
 		F7ADCF24581CBB9E78B25ED0 /* Pods_ChronoSyncTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ChronoSyncTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -144,8 +150,6 @@
 		C321E82A21DBF39000C7CDA4 /* chronosync */ = {
 			isa = PBXGroup;
 			children = (
-				C321E86F21DBFC5200C7CDA4 /* Time.swift */,
-				C321E86D21DBFC2600C7CDA4 /* TimerType.swift */,
 				C321E82B21DBF39000C7CDA4 /* AppDelegate.swift */,
 				C321E85121DBF79500C7CDA4 /* Application.swift */,
 				C321E83221DBF39100C7CDA4 /* Assets.xcassets */,
@@ -160,11 +164,14 @@
 				C321E85521DBF79500C7CDA4 /* main.swift */,
 				C321E85421DBF79500C7CDA4 /* MainAssembly.swift */,
 				C321E84F21DBF79500C7CDA4 /* TestAppDelegate.swift */,
-				C321E85321DBF79500C7CDA4 /* UIImage+TeamBoss.swift */,
+				C321E86F21DBFC5200C7CDA4 /* Time.swift */,
+				C321E86D21DBFC2600C7CDA4 /* TimerType.swift */,
+				C321E85321DBF79500C7CDA4 /* UIImage+ChronoSync.swift */,
 				C321E82D21DBF39000C7CDA4 /* ViewController.swift */,
 				C321E84B21DBF79500C7CDA4 /* ViewControllerFactory.swift */,
 				C321E85721DBF79500C7CDA4 /* ViewFactory.swift */,
 				C321E85221DBF79500C7CDA4 /* ViewIdentifiable.swift */,
+				ED9F49CA21DDC76300A83149 /* TimeService.swift */,
 			);
 			path = chronosync;
 			sourceTree = "<group>";
@@ -172,11 +179,13 @@
 		C321E83F21DBF39100C7CDA4 /* chronosyncTests */ = {
 			isa = PBXGroup;
 			children = (
+				C321E86521DBF9FC00C7CDA4 /* ChronoSyncTests-Bridging-Header.h */,
+				C321E84221DBF39100C7CDA4 /* Info.plist */,
 				C321E86621DBF9FC00C7CDA4 /* TestHelpers.swift */,
 				C321E86721DBF9FC00C7CDA4 /* TestMainAssembly.swift */,
 				C321E86821DBF9FC00C7CDA4 /* ViewControllerFactory+TestHelper.swift */,
-				C321E84221DBF39100C7CDA4 /* Info.plist */,
-				C321E86521DBF9FC00C7CDA4 /* ChronoSyncTests-Bridging-Header.h */,
+				ED9F49CC21DDC78600A83149 /* FakeTimeService.swift */,
+				ED9F49CE21DDC7B600A83149 /* TimeServiceSpec.swift */,
 			);
 			path = chronosyncTests;
 			sourceTree = "<group>";
@@ -294,6 +303,8 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-ChronoSyncTests/Pods-ChronoSyncTests-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Nimble/Nimble.framework",
 				"${BUILT_PRODUCTS_DIR}/Quick/Quick.framework",
+				"${BUILT_PRODUCTS_DIR}/Spry/Spry.framework",
+				"${BUILT_PRODUCTS_DIR}/Spry+Nimble/Spry_Nimble.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
@@ -301,6 +312,8 @@
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nimble.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Quick.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Spry.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Spry_Nimble.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -394,10 +407,11 @@
 				C321E86C21DBFA0600C7CDA4 /* TestMainAssembly.swift in Sources */,
 				C321E86321DBF79500C7CDA4 /* ForceResolve.swift in Sources */,
 				C321E86421DBF79500C7CDA4 /* ViewFactory.swift in Sources */,
+				ED9F49CB21DDC76300A83149 /* TimeService.swift in Sources */,
 				C321E85D21DBF79500C7CDA4 /* ForceCast.swift in Sources */,
 				C321E85B21DBF79500C7CDA4 /* BaseView.swift in Sources */,
 				C321E82E21DBF39000C7CDA4 /* ViewController.swift in Sources */,
-				C321E86021DBF79500C7CDA4 /* UIImage+TeamBoss.swift in Sources */,
+				C321E86021DBF79500C7CDA4 /* UIImage+ChronoSync.swift in Sources */,
 				C321E85F21DBF79500C7CDA4 /* ViewIdentifiable.swift in Sources */,
 				C321E86121DBF79500C7CDA4 /* MainAssembly.swift in Sources */,
 				C321E86E21DBFC2600C7CDA4 /* TimerType.swift in Sources */,
@@ -411,6 +425,8 @@
 			files = (
 				C321E86921DBF9FD00C7CDA4 /* TestHelpers.swift in Sources */,
 				C321E86B21DBF9FD00C7CDA4 /* ViewControllerFactory+TestHelper.swift in Sources */,
+				ED9F49CD21DDC78600A83149 /* FakeTimeService.swift in Sources */,
+				ED9F49CF21DDC7B600A83149 /* TimeServiceSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,6 +1,6 @@
 //
 //  Application.swift
-//  TeamBoss
+//  KICommon
 //
 //  Created by Cody Vandermyn on 11/11/18.
 //  Copyright © 2018 Kodeman Industries. All rights reserved.
@@ -51,7 +51,7 @@ class TestApplication: UIApplication, ApplicationRoot {
     fileprivate var container: Container
 
     override init() {
-        container = Container()
+        container = Container(parent: nil, defaultObjectScope: .graph)
 
         super.init()
 

@@ -30,8 +30,8 @@ public class ViewControllerFactory {
     }
 
     /**
-     This function returns a view controller that is contained in a storyboard. It requires that the storyboard has the same name as the class.
-     Example: AlertController must be in AlertController.storyboard.
+     This function returns a view controller that is contained in a storyboard. It requires that the storyboard has the same name as the class and that the view controller is marked as the initial view controller.
+     Example: MyViewController must be in MyViewController.storyboard.
 
      - parameter type: The type of the view controller to return; the result will be force casted to this type.
      */

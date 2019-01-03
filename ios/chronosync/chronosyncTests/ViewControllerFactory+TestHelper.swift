@@ -5,6 +5,7 @@ import SwinjectStoryboard
 
 @testable import ChronoSync
 
+// Essentially the same as the main class, but defaults the container to be the `SwinjectStoryboard.defaultContainer`
 extension ViewControllerFactory {
     /**
      This function returns a view controller that is contained in a storyboard. It requires that the storyboard has the same name as the class.
