@@ -35,6 +35,9 @@
 		ED9F49CB21DDC76300A83149 /* TimeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED9F49CA21DDC76300A83149 /* TimeService.swift */; };
 		ED9F49CD21DDC78600A83149 /* FakeTimeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED9F49CC21DDC78600A83149 /* FakeTimeService.swift */; };
 		ED9F49CF21DDC7B600A83149 /* TimeServiceSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED9F49CE21DDC7B600A83149 /* TimeServiceSpec.swift */; };
+		ED9F49D421DDCD6900A83149 /* SplitTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED9F49D221DDCD6500A83149 /* SplitTime.swift */; };
+		ED9F49D621DDD05300A83149 /* LapTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED9F49D521DDD05300A83149 /* LapTimer.swift */; };
+		ED9F49D821DDD27300A83149 /* LapTimerSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED9F49D721DDD27300A83149 /* LapTimerSpec.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -84,6 +87,9 @@
 		ED9F49CA21DDC76300A83149 /* TimeService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeService.swift; sourceTree = "<group>"; };
 		ED9F49CC21DDC78600A83149 /* FakeTimeService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeTimeService.swift; sourceTree = "<group>"; };
 		ED9F49CE21DDC7B600A83149 /* TimeServiceSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeServiceSpec.swift; sourceTree = "<group>"; };
+		ED9F49D221DDCD6500A83149 /* SplitTime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplitTime.swift; sourceTree = "<group>"; };
+		ED9F49D521DDD05300A83149 /* LapTimer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LapTimer.swift; sourceTree = "<group>"; };
+		ED9F49D721DDD27300A83149 /* LapTimerSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LapTimerSpec.swift; sourceTree = "<group>"; };
 		F7ADCF24581CBB9E78B25ED0 /* Pods_ChronoSyncTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ChronoSyncTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -159,19 +165,21 @@
 				C321E83721DBF39100C7CDA4 /* Info.plist */,
 				C321E84D21DBF79500C7CDA4 /* Kitchen.swift */,
 				C321E84C21DBF79500C7CDA4 /* KitchenDelegate.swift */,
+				ED9F49D521DDD05300A83149 /* LapTimer.swift */,
 				C321E83421DBF39100C7CDA4 /* LaunchScreen.storyboard */,
 				C321E82F21DBF39000C7CDA4 /* Main.storyboard */,
 				C321E85521DBF79500C7CDA4 /* main.swift */,
 				C321E85421DBF79500C7CDA4 /* MainAssembly.swift */,
+				ED9F49D221DDCD6500A83149 /* SplitTime.swift */,
 				C321E84F21DBF79500C7CDA4 /* TestAppDelegate.swift */,
 				C321E86F21DBFC5200C7CDA4 /* Time.swift */,
 				C321E86D21DBFC2600C7CDA4 /* TimerType.swift */,
+				ED9F49CA21DDC76300A83149 /* TimeService.swift */,
 				C321E85321DBF79500C7CDA4 /* UIImage+ChronoSync.swift */,
 				C321E82D21DBF39000C7CDA4 /* ViewController.swift */,
 				C321E84B21DBF79500C7CDA4 /* ViewControllerFactory.swift */,
 				C321E85721DBF79500C7CDA4 /* ViewFactory.swift */,
 				C321E85221DBF79500C7CDA4 /* ViewIdentifiable.swift */,
-				ED9F49CA21DDC76300A83149 /* TimeService.swift */,
 			);
 			path = chronosync;
 			sourceTree = "<group>";
@@ -180,12 +188,13 @@
 			isa = PBXGroup;
 			children = (
 				C321E86521DBF9FC00C7CDA4 /* ChronoSyncTests-Bridging-Header.h */,
+				ED9F49CC21DDC78600A83149 /* FakeTimeService.swift */,
 				C321E84221DBF39100C7CDA4 /* Info.plist */,
+				ED9F49D721DDD27300A83149 /* LapTimerSpec.swift */,
 				C321E86621DBF9FC00C7CDA4 /* TestHelpers.swift */,
 				C321E86721DBF9FC00C7CDA4 /* TestMainAssembly.swift */,
-				C321E86821DBF9FC00C7CDA4 /* ViewControllerFactory+TestHelper.swift */,
-				ED9F49CC21DDC78600A83149 /* FakeTimeService.swift */,
 				ED9F49CE21DDC7B600A83149 /* TimeServiceSpec.swift */,
+				C321E86821DBF9FC00C7CDA4 /* ViewControllerFactory+TestHelper.swift */,
 			);
 			path = chronosyncTests;
 			sourceTree = "<group>";
@@ -402,6 +411,7 @@
 				C321E85C21DBF79500C7CDA4 /* TestAppDelegate.swift in Sources */,
 				C321E85821DBF79500C7CDA4 /* ViewControllerFactory.swift in Sources */,
 				C321E85921DBF79500C7CDA4 /* KitchenDelegate.swift in Sources */,
+				ED9F49D621DDD05300A83149 /* LapTimer.swift in Sources */,
 				C321E85A21DBF79500C7CDA4 /* Kitchen.swift in Sources */,
 				C321E87021DBFC5200C7CDA4 /* Time.swift in Sources */,
 				C321E86C21DBFA0600C7CDA4 /* TestMainAssembly.swift in Sources */,
@@ -410,6 +420,7 @@
 				ED9F49CB21DDC76300A83149 /* TimeService.swift in Sources */,
 				C321E85D21DBF79500C7CDA4 /* ForceCast.swift in Sources */,
 				C321E85B21DBF79500C7CDA4 /* BaseView.swift in Sources */,
+				ED9F49D421DDCD6900A83149 /* SplitTime.swift in Sources */,
 				C321E82E21DBF39000C7CDA4 /* ViewController.swift in Sources */,
 				C321E86021DBF79500C7CDA4 /* UIImage+ChronoSync.swift in Sources */,
 				C321E85F21DBF79500C7CDA4 /* ViewIdentifiable.swift in Sources */,
@@ -425,6 +436,7 @@
 			files = (
 				C321E86921DBF9FD00C7CDA4 /* TestHelpers.swift in Sources */,
 				C321E86B21DBF9FD00C7CDA4 /* ViewControllerFactory+TestHelper.swift in Sources */,
+				ED9F49D821DDD27300A83149 /* LapTimerSpec.swift in Sources */,
 				ED9F49CD21DDC78600A83149 /* FakeTimeService.swift in Sources */,
 				ED9F49CF21DDC7B600A83149 /* TimeServiceSpec.swift in Sources */,
 			);

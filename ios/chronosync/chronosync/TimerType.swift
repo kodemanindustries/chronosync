@@ -1,6 +1,6 @@
 import Foundation
 
-protocol TimerType {
+public protocol TimerType {
     var title: String { get }
     var identifier: UUID { get }
 

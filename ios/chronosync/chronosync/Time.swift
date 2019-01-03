@@ -6,7 +6,7 @@ private enum Constant {
     fileprivate static let minutesInHours: UInt = 60
 }
 
-protocol TimeType {
+public protocol TimeType {
     static func zero() -> Time
 
     var hours: UInt { get }
@@ -34,7 +34,7 @@ extension TimeType {
 }
 
 public struct Time: TimeType {
-    let milliseconds: UInt
+    public let milliseconds: UInt
     public init(milliseconds: UInt) {
         self.milliseconds = milliseconds
     }
