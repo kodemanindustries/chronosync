@@ -25,15 +25,15 @@ public protocol TimeType {
 
 extension TimeType {
     public var hours: UInt {
-        return minutes * Constant.minutesInHours
+        return minutes / Constant.minutesInHours
     }
 
     public var minutes: UInt {
-        return seconds * Constant.secondsInMinutes
+        return seconds / Constant.secondsInMinutes
     }
 
     public var seconds: UInt {
-        return milliseconds * Constant.millisecondsInSeconds
+        return milliseconds / Constant.millisecondsInSeconds
     }
 
     public static func zero() -> Time {
@@ -42,7 +42,7 @@ extension TimeType {
 }
 
 public struct Time: TimeType {
-    public let milliseconds: UInt
+    public let milliseconds: UInt 
     public init(milliseconds: UInt) {
         self.milliseconds = milliseconds
     }
