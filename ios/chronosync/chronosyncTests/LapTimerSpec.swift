@@ -57,6 +57,47 @@ class LapTimerSpec: QuickSpec {
                 }
             }
 
+            describe("splits add up to total time") {
+                beforeEach {
+                    timeService.stub(.uptime).andReturn(UInt(1444))
+                    subject.startNow()
+                    timeService.stubAgain(.uptime).andReturn(UInt(2888))
+                    subject.takeLapTimeNow()
+                    timeService.stubAgain(.uptime).andReturn(UInt(4332))
+                    subject.takeLapTimeNow()
+                    timeService.stubAgain(.uptime).andReturn(UInt(5776))
+                    subject.takeLapTimeNow()
+                    timeService.stubAgain(.uptime).andReturn(UInt(7220))
+                    subject.stopNow()
+                }
+
+                it("should have the correct lap times") {
+                    expect(subject.lapTimes).to(equal([
+                        Time(milliseconds: 1444),
+                        Time(milliseconds: 2888),
+                        Time(milliseconds: 4332),
+                        Time(milliseconds: 5776),
+                    ]))
+                }
+
+                it("should have the correct split times") {
+                    expect(subject.splits).to(equal([
+                        SplitTime(milliseconds: 1444, sortNumber: 0),
+                        SplitTime(milliseconds: 1444, sortNumber: 1),
+                        SplitTime(milliseconds: 1444, sortNumber: 2),
+                        SplitTime(milliseconds: 1444, sortNumber: 3),
+                    ]))
+                }
+
+                it("should have the correct stop time") {
+                    expect(subject.stopTime).to(equal(Time(milliseconds: 7220)))
+                }
+
+                it("should have the correct ticking time") {
+                    expect(subject.tickingTime).to(equal(Time(milliseconds: 5776)))
+                }
+            }
+
             describe("take lap time now") {
                 context("when the timer is running") {
                     beforeEach {
@@ -125,8 +166,8 @@ class LapTimerSpec: QuickSpec {
                         expect(subject.stopTime).to(equal(Time(milliseconds: 1240)))
                         expect(subject.resumeTime).to(equal(Time.zero()))
                         expect(subject.pausedTime).to(equal(Time.zero()))
-                        expect(subject.lapTimes.count).to(equal(0))
-                        expect(subject.splits.count).to(equal(0))
+                        expect(subject.lapTimes.count).to(equal(1))
+                        expect(subject.splits.count).to(equal(1))
                         expect(subject.tickingTime).to(equal(Time(milliseconds: 240)))
                     }
                 }

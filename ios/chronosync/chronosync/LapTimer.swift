@@ -78,6 +78,10 @@ public class LapTimer: TimerType {
         lapTimes.append(time(withClockTime: lapTime))
     }
 
+    private func removeLastLapTime() {
+        lapTimes.removeLast()
+    }
+
     private func start(withClockTime startTime: UInt) {
         isRunning = true
         hasStarted = true
@@ -87,12 +91,14 @@ public class LapTimer: TimerType {
     private func stop(withClockTime stopTime: UInt) {
         isRunning = false
         self.stopTime = Time(milliseconds: stopTime)
+        takeLapTime(withClockTime: stopTime)
     }
 
     private func resume(withClockTime resumeTime: UInt) {
         isRunning = true
         self.resumeTime = Time(milliseconds: resumeTime)
         self.pausedTime += self.resumeTime - stopTime
+        removeLastLapTime()
     }
 
     // MARK: - TimerType
