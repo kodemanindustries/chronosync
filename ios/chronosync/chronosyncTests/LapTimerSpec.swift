@@ -53,7 +53,6 @@ class LapTimerSpec: QuickSpec {
                     expect(subject.resumeTime).to(equal(Time.zero()))
                     expect(subject.pausedTime).to(equal(Time.zero()))
                     expect(subject.lapTimes.count).to(equal(0))
-                    expect(subject.splits.count).to(equal(0))
                 }
             }
 
@@ -77,15 +76,6 @@ class LapTimerSpec: QuickSpec {
                         Time(milliseconds: 2888),
                         Time(milliseconds: 4332),
                         Time(milliseconds: 5776),
-                    ]))
-                }
-
-                it("should have the correct split times") {
-                    expect(subject.splits).to(equal([
-                        SplitTime(milliseconds: 1444, sortNumber: 0),
-                        SplitTime(milliseconds: 1444, sortNumber: 1),
-                        SplitTime(milliseconds: 1444, sortNumber: 2),
-                        SplitTime(milliseconds: 1444, sortNumber: 3),
                     ]))
                 }
 
@@ -116,13 +106,6 @@ class LapTimerSpec: QuickSpec {
                         ]))
                     }
 
-                    it("should have the correct splits") {
-                        expect(subject.splits).to(equal([
-                            SplitTime(milliseconds: 100, sortNumber: 0),
-                            SplitTime(milliseconds: 150, sortNumber: 1),
-                        ]))
-                    }
-
                     it("should have the correct state") {
                         expect(subject.title).to(equal(title))
                         expect(subject.identifier).toNot(beNil())
@@ -133,7 +116,6 @@ class LapTimerSpec: QuickSpec {
                         expect(subject.resumeTime).to(equal(Time.zero()))
                         expect(subject.pausedTime).to(equal(Time.zero()))
                         expect(subject.lapTimes.count).to(equal(2))
-                        expect(subject.splits.count).to(equal(2))
                         expect(subject.tickingTime).to(equal(Time(milliseconds: 250)))
                     }
                 }
@@ -167,7 +149,6 @@ class LapTimerSpec: QuickSpec {
                         expect(subject.resumeTime).to(equal(Time.zero()))
                         expect(subject.pausedTime).to(equal(Time.zero()))
                         expect(subject.lapTimes.count).to(equal(1))
-                        expect(subject.splits.count).to(equal(1))
                         expect(subject.tickingTime).to(equal(Time(milliseconds: 240)))
                     }
                 }
@@ -205,7 +186,6 @@ class LapTimerSpec: QuickSpec {
                     expect(subject.resumeTime).to(equal(Time.zero()))
                     expect(subject.pausedTime).to(equal(Time.zero()))
                     expect(subject.lapTimes.count).to(equal(0))
-                    expect(subject.splits.count).to(equal(0))
                 }
             }
 
@@ -239,7 +219,6 @@ class LapTimerSpec: QuickSpec {
                         expect(subject.resumeTime).to(equal(Time(milliseconds: 1540)))
                         expect(subject.pausedTime).to(equal(Time(milliseconds: 300)))
                         expect(subject.lapTimes.count).to(equal(0))
-                        expect(subject.splits.count).to(equal(0))
                         expect(subject.tickingTime).to(equal(Time(milliseconds: 240)))
                     }
                 }

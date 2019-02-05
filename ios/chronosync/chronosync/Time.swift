@@ -55,7 +55,7 @@ extension Time {
     }
 
     public static func - (left: Time, right: Time) -> Time {
-        precondition(left.milliseconds > right.milliseconds, "Time values can only be positive so you must subtract the smaller Time from the larger Time.")
+        precondition(left.milliseconds >= right.milliseconds, "Time values can only be positive so you must subtract the smaller Time from the larger Time.")
         return Time(milliseconds: left.milliseconds - right.milliseconds)
     }
 

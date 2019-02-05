@@ -8,25 +8,12 @@
 
 import Foundation
 
-/*
- LapTimer will produce arrays of lap `Time`s and `SplitTime`s like:
-    -- 0.00
-    0 1.01 (split)
-    0 1.01 (lap)
-    1 0.09 (split)
-    1 1.10 (lap)
-    2 0.35 (split)
-    2 1.45 (lap)
-    3 1.68 (split)
-    3 3.13 (lap)
-    4 1.19 (split)
-    4 4.32 (lap)
-    5 1.66 (split)
-    5 5.98 (lap)
- */
-public class LapTimer: TimerType {
-    public private(set) var lapTimes: [Time]
+public protocol LapTimerType: TimerType {
+    var lapTimes: [Time] { get }
+    var splits: [SplitTime] { get }
+}
 
+extension LapTimerType {
     public var splits: [SplitTime] {
         if lapTimes.count > 1 {
             var splits: [SplitTime] = []
@@ -47,6 +34,13 @@ public class LapTimer: TimerType {
             return []
         }
     }
+}
+
+/*
+ `LapTimer`'s main goal is to produce a sequence of lap times. Being a `TimerType`, it also is able to be paused, resumed, stopped, etc.
+ */
+public class LapTimer: LapTimerType {
+    public private(set) var lapTimes: [Time]
 
     private var timeService: TimeService
 
