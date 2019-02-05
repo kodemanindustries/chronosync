@@ -27,7 +27,7 @@ extension LapTimerType {
         }
         else if lapTimes.count == 1 {
             let lapTime = lapTimes[0]
-            let splitTime = SplitTime(milliseconds: lapTime.milliseconds, sortNumber: 0)
+            let splitTime = SplitTime(time: lapTime, sortNumber: 0)
             return [splitTime]
         }
         else {

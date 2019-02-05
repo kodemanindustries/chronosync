@@ -1,6 +1,6 @@
 //
 //  TimerDisplaySpec.swift
-//  ChronoSync
+//  ChronoSyncTests
 //
 //  Created by Vandermyn, Cody on 2/5/19.
 //  Copyright © 2019 Kodeman Industries. All rights reserved.

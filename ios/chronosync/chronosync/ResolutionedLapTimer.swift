@@ -1,5 +1,5 @@
 //
-//  TimerDisplay.swift
+//  ResolutionedLapTimer.swift
 //  ChronoSync
 //
 //  Created by Vandermyn, Cody on 2/5/19.

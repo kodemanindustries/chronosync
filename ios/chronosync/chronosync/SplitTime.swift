@@ -1,6 +1,6 @@
 //
 //  SplitTime.swift
-//  ChronoSyncTests
+//  ChronoSync
 //
 //  Created by Vandermyn, Cody on 1/2/19.
 //  Copyright © 2019 Kodeman Industries. All rights reserved.
@@ -11,25 +11,39 @@ import Foundation
 public typealias Details = String
 
 public struct SplitTime: TimeType {
+    public var time: Time
     public var details: Details?
     public let sortNumber: Int
 
-    // MARK: - TimeType
-    public let milliseconds: UInt
+    public var milliseconds: UInt {
+        return time.milliseconds
+    }
+
     init(milliseconds: UInt, sortNumber: Int) {
-        self.milliseconds = milliseconds
+        self.time = Time(milliseconds: milliseconds)
         self.sortNumber = sortNumber
     }
 
-    public init(time: Time, sortNumber: Int) {
-        self.init(milliseconds: time.milliseconds, sortNumber: sortNumber)
+    init(time: Time, sortNumber: Int) {
+        self.time = time
+        self.sortNumber = sortNumber
     }
 }
 
-extension SplitTime: Equatable {}
-
 extension SplitTime: Comparable {
     public static func < (lhs: SplitTime, rhs: SplitTime) -> Bool {
-        return lhs.milliseconds < rhs.milliseconds
+        return lhs.time < rhs.time
+    }
+}
+
+extension SplitTime: CustomStringConvertible {
+    public var description: String {
+        return "\(hours):\(minutes):\(seconds).\(milliseconds), \(sortNumber), \(details ?? "")"
+    }
+}
+
+extension SplitTime: CustomDebugStringConvertible {
+    public var debugDescription: String {
+        return "SplitTime: \(hours):\(minutes):\(seconds).\(milliseconds), \(sortNumber), \(details ?? "No Details")"
     }
 }

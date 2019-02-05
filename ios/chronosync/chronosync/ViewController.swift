@@ -1,6 +1,6 @@
 //
 //  ViewController.swift
-//  chronosync
+//  ChronoSync
 //
 //  Created by Cody Vandermyn on 1/1/19.
 //  Copyright © 2019 Kodeman Industries. All rights reserved.

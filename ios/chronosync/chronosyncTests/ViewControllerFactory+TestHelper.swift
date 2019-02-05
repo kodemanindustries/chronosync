@@ -1,3 +1,11 @@
+//
+//  ViewControllerFactory+TestHelper.swift
+//  ChronoSyncTests
+//
+//  Created by Cody Vandermyn on 11/11/18.
+//  Copyright © 2018 Kodeman Industries. All rights reserved.
+//
+
 import Foundation
 
 import Swinject

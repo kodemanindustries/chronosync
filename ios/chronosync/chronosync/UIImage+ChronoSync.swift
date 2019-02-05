@@ -1,6 +1,6 @@
 //
 //  UIImage+ChronoSync.swift
-//  KICommon
+//  ChronoSync
 //
 //  Created by Vandermyn, Cody on 11/27/18.
 //  Copyright © 2018 Kodeman Industries. All rights reserved.
@@ -9,8 +9,8 @@
 import Foundation
 import UIKit
 
-private class CustomTeamBossImages {}
-private let bundle = Bundle(for: CustomTeamBossImages.self)
+private class CustomChronoSyncImages {}
+private let bundle = Bundle(for: CustomChronoSyncImages.self)
 
 /**
  Returns a UIImage and ensures image exists. Crashes otherwise.
