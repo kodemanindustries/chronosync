@@ -9,6 +9,8 @@
 import Foundation
 
 private enum Constant {
+    fileprivate static let millisecondsInHundredths: UInt = 10
+    fileprivate static let millisecondsInTenths: UInt = 100
     fileprivate static let millisecondsInSeconds: UInt = 1000
     fileprivate static let secondsInMinutes: UInt = 60
     fileprivate static let minutesInHours: UInt = 60
@@ -34,6 +36,14 @@ extension TimeType {
 
     public var seconds: UInt {
         return milliseconds / Constant.millisecondsInSeconds
+    }
+
+    public var tenths: UInt {
+        return milliseconds / Constant.millisecondsInTenths
+    }
+
+    public var hundredths: UInt {
+        return milliseconds / Constant.millisecondsInHundredths
     }
 
     public static func zero() -> Time {

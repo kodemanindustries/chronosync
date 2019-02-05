@@ -13,10 +13,32 @@ class ViewController: UIViewController {
     @IBOutlet var minutesLabel: UILabel!
     @IBOutlet var secondsLabel: UILabel!
     @IBOutlet var hundredthsLabel: UILabel!
+    @IBOutlet var resolutionSegmentedControl: UISegmentedControl!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        timer.resolution = .second
+    }
+
+    private var resolution: ResolutionedLapTimer.Resolution = .second {
+        didSet {
+            timer.resolution = resolution
+        }
+    }
+
+    @IBAction func indexChanged(_ sender: UISegmentedControl) {
+        switch sender.selectedSegmentIndex {
+        case 0:
+            resolution = .second
+        case 1:
+            resolution = .tenths
+        case 2:
+            resolution = .hundredths
+        case 3:
+            resolution = .thousandths
+        default:
+            fatalError("Invalid segmented index.")
+        }
     }
 
     override func viewWillAppear(_ animated: Bool) {
@@ -37,11 +59,19 @@ class ViewController: UIViewController {
 
     @objc private func step(_ displayLink: CADisplayLink) {
         let time = timer.tickingTime
-        print(String(describing: time))
         hoursLabel.text = String(describing: (time.hours % 24))
         minutesLabel.text = String(describing: (time.minutes % 60))
         secondsLabel.text = String(describing: (time.seconds % 60))
-        hundredthsLabel.text = String(describing: (time.milliseconds % 1000))
+        switch timer.resolution {
+        case .second:
+            hundredthsLabel.text = "0"
+        case .tenths:
+            hundredthsLabel.text = String(describing: (time.tenths % 10))
+        case .hundredths:
+            hundredthsLabel.text = String(describing: (time.hundredths % 100))
+        case .thousandths:
+            hundredthsLabel.text = String(describing: (time.milliseconds % 1000))
+        }
     }
 }
 

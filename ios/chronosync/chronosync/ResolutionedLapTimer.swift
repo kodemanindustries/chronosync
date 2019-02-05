@@ -17,7 +17,7 @@ public class ResolutionedLapTimer: LapTimerType {
     }
 
     private let lapTimer: LapTimer
-    private let resolution: Resolution
+    public var resolution: Resolution
 
     public var lapTimes: [Time] {
         return adjustedLapTimes()

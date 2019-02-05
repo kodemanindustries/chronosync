@@ -117,9 +117,23 @@
                                     <constraint firstItem="h1v-Mo-Nd4" firstAttribute="top" secondItem="1rk-aQ-NW9" secondAttribute="top" id="zU8-ap-1by"/>
                                 </constraints>
                             </view>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Aim-XN-fMX">
+                                <rect key="frame" x="78" y="241.5" width="219" height="29"/>
+                                <segments>
+                                    <segment title="1s"/>
+                                    <segment title="0.1s"/>
+                                    <segment title="0.01s"/>
+                                    <segment title="0.001s"/>
+                                </segments>
+                                <connections>
+                                    <action selector="indexChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="eaS-Sd-UYb"/>
+                                </connections>
+                            </segmentedControl>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="Aim-XN-fMX" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Ahg-DY-XRW"/>
+                            <constraint firstItem="1rk-aQ-NW9" firstAttribute="top" secondItem="Aim-XN-fMX" secondAttribute="bottom" constant="20" id="bqJ-IC-VDk"/>
                             <constraint firstItem="1rk-aQ-NW9" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="exx-Qy-yib"/>
                             <constraint firstItem="1rk-aQ-NW9" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="f2G-zp-RzD"/>
                         </constraints>
@@ -129,6 +143,7 @@
                         <outlet property="hoursLabel" destination="gq8-Wz-R1Y" id="XRm-PK-QjE"/>
                         <outlet property="hundredthsLabel" destination="1HG-l1-EcF" id="LjB-26-Fgo"/>
                         <outlet property="minutesLabel" destination="t5u-76-fm4" id="lhC-M6-Mrv"/>
+                        <outlet property="resolutionSegmentedControl" destination="Aim-XN-fMX" id="GTv-b0-tvN"/>
                         <outlet property="secondsLabel" destination="dsv-Po-bFM" id="Au1-hs-ELx"/>
                     </connections>
                 </viewController>
