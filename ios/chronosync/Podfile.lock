@@ -1,43 +1,97 @@
 PODS:
-  - Nimble (7.3.1)
-  - Quick (1.3.2)
-  - Result (4.1.0)
+  - Alamofire (5.1.0)
+  - KIF (3.7.9):
+    - KIF/Core (= 3.7.9)
+  - KIF/Core (3.7.9)
+  - KIF/IdentifierTests (3.7.9):
+    - KIF/Core
+  - Nimble (9.0.0-beta.1)
+  - Nuke (9.0.0-rc.1)
+  - OHHTTPStubs/Core (9.0.0)
+  - OHHTTPStubs/Default (9.0.0):
+    - OHHTTPStubs/Core
+    - OHHTTPStubs/JSON
+    - OHHTTPStubs/NSURLSession
+    - OHHTTPStubs/OHPathHelpers
+  - OHHTTPStubs/JSON (9.0.0):
+    - OHHTTPStubs/Core
+  - OHHTTPStubs/NSURLSession (9.0.0):
+    - OHHTTPStubs/Core
+  - OHHTTPStubs/OHPathHelpers (9.0.0)
+  - OHHTTPStubs/Swift (9.0.0):
+    - OHHTTPStubs/Default
+  - Quick (2.2.0)
+  - RxBlocking (5.1.1):
+    - RxSwift (~> 5)
+  - RxRelay (5.1.1):
+    - RxSwift (~> 5)
+  - RxSwift (5.1.1)
+  - RxTest (5.1.1):
+    - RxSwift (~> 5)
   - Spry (3.2.3)
   - "Spry+Nimble (3.2.3)":
     - Nimble (> 7.0.0)
     - Spry (= 3.2.3)
-  - Swinject (2.5.0)
-  - SwinjectStoryboard (2.1.0):
-    - Swinject (~> 2.5)
+  - Swinject (2.7.1)
+  - SwinjectStoryboard (2.2.0):
+    - Swinject (~> 2.7.1)
 
 DEPENDENCIES:
-  - Nimble (= 7.3.1)
-  - Quick (= 1.3.2)
-  - Result (= 4.1.0)
-  - Spry (= 3.2.3)
-  - "Spry+Nimble (= 3.2.3)"
-  - Swinject (= 2.5.0)
-  - SwinjectStoryboard (= 2.1.0)
+  - Alamofire (= 5.1.0)
+  - KIF (= 3.7.9)
+  - KIF/IdentifierTests (= 3.7.9)
+  - Nimble (= 9.0.0-beta.1)
+  - Nuke (= 9.0.0-rc.1)
+  - OHHTTPStubs/Swift (= 9.0.0)
+  - Quick (= 2.2.0)
+  - RxBlocking (= 5.1.1)
+  - RxRelay (= 5.1.1)
+  - RxSwift (= 5.1.1)
+  - RxTest (= 5.1.1)
+  - Spry (from `/Users/codyv/Documents/Nope/KI/Spry`)
+  - "Spry+Nimble (from `/Users/codyv/Documents/Nope/KI/Spry`)"
+  - Swinject (from `/Users/codyv/Documents/Nope/KI/Swinject`)
+  - SwinjectStoryboard (from `/Users/codyv/Documents/Nope/KI/SwinjectStoryboard`)
 
 SPEC REPOS:
-  https://github.com/cocoapods/specs.git:
+  trunk:
+    - Alamofire
+    - KIF
     - Nimble
+    - Nuke
+    - OHHTTPStubs
     - Quick
-    - Result
-    - Spry
-    - "Spry+Nimble"
-    - Swinject
-    - SwinjectStoryboard
+    - RxBlocking
+    - RxRelay
+    - RxSwift
+    - RxTest
+
+EXTERNAL SOURCES:
+  Spry:
+    :path: "/Users/codyv/Documents/Nope/KI/Spry"
+  "Spry+Nimble":
+    :path: "/Users/codyv/Documents/Nope/KI/Spry"
+  Swinject:
+    :path: "/Users/codyv/Documents/Nope/KI/Swinject"
+  SwinjectStoryboard:
+    :path: "/Users/codyv/Documents/Nope/KI/SwinjectStoryboard"
 
 SPEC CHECKSUMS:
-  Nimble: 04f732da099ea4d153122aec8c2a88fd0c7219ae
-  Quick: 2623cb30d7a7f41ca62f684f679586558f483d46
-  Result: bd966fac789cc6c1563440b348ab2598cc24d5c7
-  Spry: 216a7f6566e6c7a0392f3f4b4e804e71d58e1835
-  "Spry+Nimble": 65b76e7d2dbe2d9166109ff44d8eea44a0bea94e
-  Swinject: 82cdb851f63f91bba974e3eca1d69780f2f7677e
-  SwinjectStoryboard: 688f096033103e66ffcf6ca678211acd7d7be505
+  Alamofire: 9d5c5f602928e512395b30950c5984eca840093c
+  KIF: 350f96fb4205972a10e4c1a45774d48b2d8482d8
+  Nimble: 2ff729ea0026d4c77a7f901354697a76ca761bd6
+  Nuke: 944d44a9dfedce50f4a76ded6841ccea474b42f6
+  OHHTTPStubs: cb29d2a9d09a828ecb93349a2b0c64f99e0db89f
+  Quick: 7fb19e13be07b5dfb3b90d4f9824c855a11af40e
+  RxBlocking: 5f700a78cad61ce253ebd37c9a39b5ccc76477b4
+  RxRelay: d77f7d771495f43c556cbc43eebd1bb54d01e8e9
+  RxSwift: 81470a2074fa8780320ea5fe4102807cb7118178
+  RxTest: 711632d5644dffbeb62c936a521b5b008a1e1faa
+  Spry: d3db079e01cf9be50bf04a9282bcf86ab6f58670
+  "Spry+Nimble": ea65f9919b162f06bce60d3c96636e9c97836a8a
+  Swinject: ddf78b8486dd9b71a667b852cad919ab4484478e
+  SwinjectStoryboard: 6d7eeedc32fe48251fd39d2c01c553c623f57197
 
-PODFILE CHECKSUM: f2bb531fbd6656fbbfe02f25c3a475efe0efd3b2
+PODFILE CHECKSUM: 15f5f67876f21ea432c8657b6c4525e1b2fdfb5b
 
-COCOAPODS: 1.5.3
+COCOAPODS: 1.9.1

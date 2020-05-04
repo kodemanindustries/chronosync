@@ -11,7 +11,7 @@ import Foundation
 public typealias Details = String
 
 public struct SplitTime: TimeType {
-    public var time: Time
+    public let time: Time
     public var details: Details?
     public let sortNumber: Int
 

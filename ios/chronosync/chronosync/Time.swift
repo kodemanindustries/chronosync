@@ -78,17 +78,19 @@ extension Time: CustomDebugStringConvertible {
 
 extension Time {
     public static func + (lhs: Time, rhs: Time) -> Time {
-        precondition(lhs.milliseconds + rhs.milliseconds < UINTMAX_MAX, "Time Overflow! (\(lhs, rhs))")
-        return Time(milliseconds: lhs.milliseconds + rhs.milliseconds)
+        let result = lhs.milliseconds + rhs.milliseconds
+        precondition(result < UInt.max, "Time Overflow! (\((lhs, rhs)))")
+        return Time(milliseconds: result)
     }
 
     public static func - (lhs: Time, rhs: Time) -> Time {
-        precondition(lhs.milliseconds >= rhs.milliseconds, "Time values can only be positive so you must subtract the smaller Time from the larger Time. (\(lhs, rhs))")
+        precondition(lhs.milliseconds >= rhs.milliseconds, "Time values can only be positive so you must subtract the smaller Time from the larger Time. (\((lhs, rhs)))")
         return Time(milliseconds: lhs.milliseconds - rhs.milliseconds)
     }
 
     public static func += (lhs: inout Time, rhs: Time) {
-        precondition(lhs.milliseconds + rhs.milliseconds < UINTMAX_MAX, "Time Overflow! (\(lhs, rhs))")
-        lhs = Time(milliseconds: lhs.milliseconds + rhs.milliseconds)
+        let result = lhs.milliseconds + rhs.milliseconds
+        precondition(result < UInt.max, "Time Overflow! (\((lhs, rhs)))")
+        lhs = Time(milliseconds: result)
     }
 }

@@ -44,7 +44,7 @@ class ViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         let displayLink = CADisplayLink(target: self, selector: #selector(step))
-        displayLink.add(to: .current, forMode: .default)
+        displayLink.add(to: .current, forMode: .common)
     }
 
     override func viewDidAppear(_ animated: Bool) {

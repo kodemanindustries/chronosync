@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Swinject
 
 /**
  Provides convenience methods to load the subclass of the BaseView's respective .xib.
@@ -17,6 +18,10 @@ import UIKit
  */
 open class BaseView: UIView {
     private var internalView: UIView?
+
+    open override class var layerClass: AnyClass {
+        return TransformLayer.self
+    }
 
     /**
      Override this function in subclasses to perform common setup during initialization.
@@ -41,7 +46,7 @@ open class BaseView: UIView {
     }
 
     /**
-     This should only need to be overriden in some tests where we need to provide the module for the real nib.
+     This should only need to be overridden in some tests where we need to provide the module for the real nib.
      - parameter classType: The class for which we are getting the module name.
      - returns: Module name derived from the class name.
      */
@@ -96,6 +101,7 @@ open class BaseView: UIView {
     required override public init(frame: CGRect) {
         super.init(frame: frame)
         initNib()
+        ManualResolver.finishConstruction(me: self)
         commonSetup()
     }
 
@@ -103,39 +109,8 @@ open class BaseView: UIView {
         super.init(coder: aDecoder)
         if internalView == nil, subviews.isEmpty {
             initNib()
+            ManualResolver.finishConstruction(me: self)
             commonSetup()
-        }
-    }
-
-    /**
-     Fades the `alpha` property of the view to zero over a specified `duration`. Sets the `isHidden` property to `true` _after_ the animation is completed. If the view already `isHidden` when this is called, then this is a no-op.
-     - parameter duration: The time to take to fade out. If <= 0.0, then no animation occurs and the view is immediately hidden.
-     */
-    public func fadeToHidden(duration: TimeInterval) {
-        guard alpha > 0.0, !isHidden else { return }
-        if duration > 0.0 {
-            UIView.animate(withDuration: duration, animations: { [unowned self] in
-                self.alpha = 0.0
-                }, completion: { [unowned self] (finished) in
-                    self.isHidden = true
-            })
-        }
-        else {
-            isHidden = true
-        }
-    }
-
-    /**
-     Fades the `alpha` property of the view to 1.0 over a specified `duration`. Sets the `isHidden` property to `false` _before_ the animation begins. If the view is not hidden when this is called, then this is a no-op.
-     - parameter duration: The time to take to fade in. If <= 0.0, then no animation occurs and the view is immediately visible.
-     */
-    public func fadeToShowing(duration: TimeInterval) {
-        guard alpha <= 0.0, isHidden else { return }
-        isHidden = false
-        if duration > 0.0 {
-            UIView.animate(withDuration: duration, animations: { [unowned self] in
-                self.alpha = 1.0
-            })
         }
     }
 
@@ -147,9 +122,12 @@ open class BaseView: UIView {
 
         topLevelView.translatesAutoresizingMaskIntoConstraints = false
         addSubview(topLevelView)
-        let hConstraints = NSLayoutConstraint.constraints(withVisualFormat: "H:|[view]|", options: [], metrics: nil, views: ["view": topLevelView])
-        let vConstraints = NSLayoutConstraint.constraints(withVisualFormat: "V:|[view]|", options: [], metrics: nil, views: ["view": topLevelView])
-        addConstraints(hConstraints)
-        addConstraints(vConstraints)
+
+        NSLayoutConstraint.activate([
+            topLevelView.leadingAnchor.constraint(equalTo: self.leadingAnchor),
+            topLevelView.trailingAnchor.constraint(equalTo: self.trailingAnchor),
+            topLevelView.topAnchor.constraint(equalTo: self.topAnchor),
+            topLevelView.bottomAnchor.constraint(equalTo: self.bottomAnchor),
+        ])
     }
 }

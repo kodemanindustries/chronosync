@@ -47,8 +47,8 @@ public class LapTimer: LapTimerType {
     public init(timeService: TimeService, title: String) {
         self.timeService = timeService
         self.title = title
-        self.lapTimes = []
 
+        lapTimes = []
         isRunning = false
         hasStarted = false
         startTime = Time.zero()
@@ -91,7 +91,7 @@ public class LapTimer: LapTimerType {
     private func resume(withClockTime resumeTime: UInt) {
         isRunning = true
         self.resumeTime = Time(milliseconds: resumeTime)
-        self.pausedTime += self.resumeTime - stopTime
+        pausedTime += self.resumeTime - stopTime
         removeLastLapTime()
     }
 

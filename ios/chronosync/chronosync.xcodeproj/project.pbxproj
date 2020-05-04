@@ -3,11 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		79D227E16FE31D226AF84421 /* Pods_ChronoSyncTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7ADCF24581CBB9E78B25ED0 /* Pods_ChronoSyncTests.framework */; };
+		924FE2EE242B11D800E6510D /* TransformLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924FE2ED242B11D800E6510D /* TransformLayer.swift */; };
 		9C53ACF8C04F26087C4A8005 /* Pods_ChronoSync.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D960AD8343597AB10BC8AD83 /* Pods_ChronoSync.framework */; };
 		C321E82C21DBF39000C7CDA4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C321E82B21DBF39000C7CDA4 /* AppDelegate.swift */; };
 		C321E82E21DBF39000C7CDA4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C321E82D21DBF39000C7CDA4 /* ViewController.swift */; };
@@ -57,6 +58,7 @@
 		034D0A619E3A894AFFA652DA /* Pods-ChronoSync.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChronoSync.release.xcconfig"; path = "Pods/Target Support Files/Pods-ChronoSync/Pods-ChronoSync.release.xcconfig"; sourceTree = "<group>"; };
 		39C78B59BC37D3E12C0B42DB /* Pods-ChronoSync.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChronoSync.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ChronoSync/Pods-ChronoSync.debug.xcconfig"; sourceTree = "<group>"; };
 		4237D176789AF6F9B285EB38 /* Pods-ChronoSyncTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChronoSyncTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ChronoSyncTests/Pods-ChronoSyncTests.release.xcconfig"; sourceTree = "<group>"; };
+		924FE2ED242B11D800E6510D /* TransformLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransformLayer.swift; sourceTree = "<group>"; };
 		C321E82821DBF39000C7CDA4 /* ChronoSync.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChronoSync.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C321E82B21DBF39000C7CDA4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C321E82D21DBF39000C7CDA4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -182,6 +184,7 @@
 				C321E86F21DBFC5200C7CDA4 /* Time.swift */,
 				C321E86D21DBFC2600C7CDA4 /* TimerType.swift */,
 				ED9F49CA21DDC76300A83149 /* TimeService.swift */,
+				924FE2ED242B11D800E6510D /* TransformLayer.swift */,
 				C321E85321DBF79500C7CDA4 /* UIImage+ChronoSync.swift */,
 				C321E82D21DBF39000C7CDA4 /* ViewController.swift */,
 				C321E84B21DBF79500C7CDA4 /* ViewControllerFactory.swift */,
@@ -265,7 +268,7 @@
 					};
 					C321E83B21DBF39100C7CDA4 = {
 						CreatedOnToolsVersion = 10.1;
-						LastSwiftMigration = 1010;
+						LastSwiftMigration = 1130;
 						TestTargetID = C321E82721DBF39000C7CDA4;
 					};
 				};
@@ -316,26 +319,15 @@
 			files = (
 			);
 			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-ChronoSyncTests/Pods-ChronoSyncTests-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/Nimble/Nimble.framework",
-				"${BUILT_PRODUCTS_DIR}/Quick/Quick.framework",
-				"${BUILT_PRODUCTS_DIR}/Spry/Spry.framework",
-				"${BUILT_PRODUCTS_DIR}/Spry+Nimble/Spry_Nimble.framework",
+				"${PODS_ROOT}/Target Support Files/Pods-ChronoSyncTests/Pods-ChronoSyncTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-			);
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nimble.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Quick.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Spry.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Spry_Nimble.framework",
+				"${PODS_ROOT}/Target Support Files/Pods-ChronoSyncTests/Pods-ChronoSyncTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ChronoSyncTests/Pods-ChronoSyncTests-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ChronoSyncTests/Pods-ChronoSyncTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		B01A73EFFD4225886D4532CF /* [CP] Check Pods Manifest.lock */ = {
@@ -388,24 +380,15 @@
 			files = (
 			);
 			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-ChronoSync/Pods-ChronoSync-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
-				"${BUILT_PRODUCTS_DIR}/Swinject/Swinject.framework",
-				"${BUILT_PRODUCTS_DIR}/SwinjectStoryboard/SwinjectStoryboard.framework",
+				"${PODS_ROOT}/Target Support Files/Pods-ChronoSync/Pods-ChronoSync-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-			);
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Swinject.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwinjectStoryboard.framework",
+				"${PODS_ROOT}/Target Support Files/Pods-ChronoSync/Pods-ChronoSync-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ChronoSync/Pods-ChronoSync-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ChronoSync/Pods-ChronoSync-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -425,6 +408,7 @@
 				C321E85A21DBF79500C7CDA4 /* Kitchen.swift in Sources */,
 				C321E87021DBFC5200C7CDA4 /* Time.swift in Sources */,
 				C321E86C21DBFA0600C7CDA4 /* TestMainAssembly.swift in Sources */,
+				924FE2EE242B11D800E6510D /* TransformLayer.swift in Sources */,
 				C321E86321DBF79500C7CDA4 /* ForceResolve.swift in Sources */,
 				C321E86421DBF79500C7CDA4 /* ViewFactory.swift in Sources */,
 				ED9F49CB21DDC76300A83149 /* TimeService.swift in Sources */,
@@ -535,13 +519,14 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -590,12 +575,13 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -608,13 +594,8 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = RRZQ277C77;
 				INFOPLIST_FILE = chronosync/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.kodemanindustries.chronosync;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -627,13 +608,8 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = RRZQ277C77;
 				INFOPLIST_FILE = chronosync/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.kodemanindustries.chronosync;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
@@ -647,16 +623,9 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = RRZQ277C77;
 				INFOPLIST_FILE = chronosyncTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.kodemanindustries.chronosyncTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "chronosyncTests/ChronoSyncTests-Bridging-Header.h";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ChronoSync.app/ChronoSync";
 			};
@@ -671,15 +640,9 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = RRZQ277C77;
 				INFOPLIST_FILE = chronosyncTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.kodemanindustries.chronosyncTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "chronosyncTests/ChronoSyncTests-Bridging-Header.h";
-				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ChronoSync.app/ChronoSync";
 			};
